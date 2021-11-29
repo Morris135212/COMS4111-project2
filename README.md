@@ -336,6 +336,8 @@ WHERE u1.u_id in (
 	);
 ```
 
+![](https://raw.githubusercontent.com/Morris135212/COMS4111-project2/main/images/query1.png)
+
 ### Query 2
 
 This query shows how the trigger functions work. Suppose we insert a new record into the DATASETS. The Trigger function will be executed automatically after the inseration have done. The detail is that we will add (The operation, timestamp, dataset id) into the datasets_audit Table.
@@ -345,6 +347,8 @@ INSERT INTO DATASETS (name, idx, provenance) VALUES ('ImageNet', '12345675', 'ht
 
 SELECT * FROM datasets_audit;
 ```
+
+![](https://raw.githubusercontent.com/Morris135212/COMS4111-project2/main/images/query2.png)
 
 ### Query 3
 
@@ -358,4 +362,6 @@ INNER JOIN COURSES c
 ON c.idx = e.c_id
 WHERE to_tsvector(c.description) @@ to_tsquery('machine & learning');
 ```
+
+![](https://raw.githubusercontent.com/Morris135212/COMS4111-project2/main/images/query3.png)
 
