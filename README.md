@@ -1,5 +1,5 @@
 # COMS4111-project2
-<center><i>TEAM MEMBER: Chenhui Mao(uni: cm4054), Zihao Zhang(uni: zh2481)</i></center>
+<center><i>TEAM MEMBER: Chenhui Mao(uni: cm4054), Zihao Huang(uni: zh2481)</i></center>
 
 ## Abstract
 In this project we will modify the schema we have in project 1 to accommodate the following features
@@ -263,7 +263,7 @@ CREATE TABLE USERS(
 );
 ```
 
-### Documents
+### Text
 
 We change some long text variable into text. With CHAR or VARCHAR, we need to define the maximum length for the variable, which is not always estimable beforehand That is not a problem to text. Moreover, with text we can make some complex text operations like parsing and matching easier. For example, we can find all courses that relate to *Machine Learn* (Will cover within 3 meaningful queries). 
 
